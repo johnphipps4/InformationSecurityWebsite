@@ -1,0 +1,99 @@
+#contact, #map {
+    width: 49%;
+    display:inline-block;
+}
+
+#map{
+	position: absolute;
+    height:300px;
+    margin-left:10px;
+    padding-top: 75px;
+    
+}
+
+.contact-wrapper {
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+    max-width: 1000px;
+}
+
+form{
+    width:100%;
+    max-width: 400px;
+    font-weight: 400;
+}
+
+input, textarea{
+    width:100%;
+    border: 1px solid #4D4D4D; 
+    height: 20px;
+    padding: 10px 0px;
+    font-size:16px;
+    font-style: italic;
+    font-family: 'Roboto', 'sans-serif';
+}
+/* Begin Left Contact Page */
+.form-horizontal {
+    width:100%;
+    padding: 15px 0px;
+}
+
+.form-control, textarea {
+  max-width: 400px;
+  height: 10em;
+}
+
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 50%;
+  overflow: hidden;
+}
+
+#send{
+    font-size:20px;
+    padding:5px;
+}
+
+button:hover {
+  box-shadow: 0px 0px 4px #000;
+}
+
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#search-form{
+    background-color:dodgerblue;
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+}
+#formulario, fieldset{
+    text-align: center;
+}
+
+fieldset input, fieldset textarea{
+    max-width:350px;
+    width: 100%;
+    margin: 10px auto;
+    color: #4d4d4d
+}
+.g-recaptcha{
+	width: 300px;
+	margin: 0 auto;
+	
+}
+#g-recaptcha-response {
+    display: block !important;
+    position: absolute;
+    margin: -78px 0 0 0 !important;
+    width: 302px !important;
+    height: 76px !important;
+    z-index: -999999;
+    opacity: 0;
+}

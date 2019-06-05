@@ -1,0 +1,123 @@
+.maps-link {
+  margin: 0 auto;
+  width: 150px;
+  padding: 20px 0;
+}
+
+.maps-link img { 
+    width: 150px; 
+}
+
+.details {
+  width: 600px;
+  margin: 0 auto;
+  font-family: "Open Sans";
+}
+#menu{
+    display:none;
+}
+
+@media screen and (max-width: 800px) {
+    .grid-container{
+        grid-template-columns:auto auto;
+    }
+    .nav-bar a {
+        display: none;
+    }
+    .nav-bar a.mobile {
+        float: right;
+        display: block;
+        padding:0px
+    }
+    .fa-bars{
+        font-size:24px;
+    }
+
+    #menu {
+        display:block;
+        right:0;
+        background: #1a1a1a;
+        position: fixed;
+        padding: 90px 0px;
+        /*    padding-left: 30%;*/
+        height: calc(100vh - 90px);
+        width: 35%;
+        min-width: 200px;
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+        z-index: 7;
+        transform: translate(150%, 0px);
+        transition: all 0.75s ease-in-out;
+    }
+
+    #menu a {
+/*        border: 2px solid black;*/
+        color:white;
+        display:block;
+        text-decoration: none;
+/*        margin: 16px 0;*/
+        transition: all 0.25s ease-in-out;
+    }
+
+    #menu a:hover {
+      color: #bdc3c7;
+      cursor: pointer;
+    }
+
+    #menu.active {
+      -webkit-transform: translate(0%, 0px);
+      transform: translate(0%, 0px);
+      transition: all 0.75s ease-in-out;
+    }
+    .menu-tab{
+        padding:20px;
+        border-bottom: 2px solid #4d4d4d
+    }
+    .menu-tab:hover{
+        background-color:#666666
+    }
+    
+    #contact, #map{
+        width:100%;
+        margin:0;
+        position: relative;
+    }
+    form{
+        margin: 0 auto;
+    }
+}
+
+/*Should Take into Account Services; can work with auto auto for from 340*/
+
+
+@media screen and (max-width: 650px) {
+    .footnote{
+        display:block;
+        margin: 0 auto;
+        padding: 10px;
+        width: 155px;
+    }
+    .right, .left{
+        float:none;
+    }
+    .right{
+        text-align: left;
+    }
+    #foot{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 460px) {
+/* need to work on fixing width of video fo screen*/
+}
+    
+@media screen and (max-width: 460px) {
+    .grid-container{
+        grid-template-columns: auto;
+    }
+    .grid-item{
+        padding:5px;
+    }
+    .container h2:before, .container h2:after{
+        width:40px;
+    }
+}
